@@ -87,18 +87,17 @@ img[src='*'] {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 500px;
+    width: 100%;
     overflow: hidden;
   }
 
   .container::after {
     content: 'Sorry, gallery runs only on desktop';
     text-align: center;
-    font-size: 22px;
+    font-size: 60px;
     color: yellow;
     z-index: 10;
-    width: 200px;
-    padding-top: 20px;
+    padding-top: 60px;
   }
   .box_names_div {
     display: none;
@@ -124,18 +123,19 @@ img[src='*'] {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 500px;
+    width: 100%;
     overflow: hidden;
   }
 
   .container::after {
     content: 'Sorry, gallery runs only on desktop';
     text-align: center;
-    font-size: 25px;
+    font-size: 60px;
     color: yellow;
     z-index: 10;
-    width: 130px;
-    padding-top: 50px;
+    width: 321px;
+    padding-top: 90px;
+    padding-left: 20px;
   }
   .box_names_div {
     display: none;
