@@ -72,3 +72,78 @@ img:not([src]) {
 img[src='*'] {
   opacity: 1;
 }
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  html,
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    background-color: black;
+    background-image: none;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+    overflow: hidden;
+  }
+
+  .container::after {
+    content: 'Sorry, gallery runs only on desktop';
+    text-align: center;
+    font-size: 22px;
+    color: yellow;
+    z-index: 10;
+    width: 200px;
+    padding-top: 20px;
+  }
+  .box_names_div {
+    display: none;
+  }
+  .boxes_container {
+    display: none;
+  }
+  .img_magnifier {
+    display: none;
+  }
+}
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  html,
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    background-color: black;
+    background-image: none;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+    overflow: hidden;
+  }
+
+  .container::after {
+    content: 'Sorry, gallery runs only on desktop';
+    text-align: center;
+    font-size: 25px;
+    color: yellow;
+    z-index: 10;
+    width: 130px;
+    padding-top: 50px;
+  }
+  .box_names_div {
+    display: none;
+  }
+  .boxes_container {
+    display: none;
+  }
+  .img_magnifier {
+    display: none;
+  }
+}
