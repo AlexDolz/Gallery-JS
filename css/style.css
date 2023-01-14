@@ -73,11 +73,11 @@ img[src='*'] {
   opacity: 1;
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media (orientation: landscape) and (any-pointer: coarse) {
   html,
   body {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .container {
     background-color: black;
@@ -88,7 +88,7 @@ img[src='*'] {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .container::after {
@@ -109,11 +109,11 @@ img[src='*'] {
     display: none;
   }
 }
-@media (orientation: portrait) and (hover: none) and (pointer: coarse) {
+@media (orientation: portrait) and (any-pointer: coarse) {
   html,
   body {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .container {
     background-color: black;
@@ -124,7 +124,7 @@ img[src='*'] {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .container::after {
